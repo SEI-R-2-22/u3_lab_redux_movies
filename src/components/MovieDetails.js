@@ -4,6 +4,7 @@ import { connect } from 'react-redux'
 import { LoadMovieDetails } from '../store/actions/MovieActions'
 
 
+
 const mapStateToProps = ({ detailsState }) => {
   return { detailsState }
 }
