@@ -43,6 +43,7 @@
   justify-content: space-around;
 }
 
-.movie-card {
-  
+.movie-detail {
+  margin: 0 auto;
+  width: 50%;
 }

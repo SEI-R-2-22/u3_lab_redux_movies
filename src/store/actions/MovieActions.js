@@ -16,10 +16,10 @@ export const LoadMovies = () => {
     }
 }
 
-export const LoadMovieDetails = () => {
+export const LoadMovieDetails = (id) => {
     return async (dispatch) => {
         try {
-        const movieDetail = await GetMovieDetails()
+        const movieDetail = await GetMovieDetails(id)
         dispatch({
             type: GET_MOVIE_DETAILS,
             payload: movieDetail

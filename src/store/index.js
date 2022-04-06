@@ -7,7 +7,7 @@ import MovieDetailsReducer from './reducers/MovieDetailsReducer'
 const store = createStore(
     combineReducers({
         movieState: MovieReducer,
-        movieDetailState: MovieDetailsReducer
+        movieDetailsState: MovieDetailsReducer
     }),
     composeWithDevTools(applyMiddleware(thunk))     
 )
