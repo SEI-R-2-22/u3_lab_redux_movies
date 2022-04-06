@@ -4,6 +4,11 @@ img {
 
 .movie-data {
   color: white;
+  margin-bottom: 30px;
+}
+
+.card {
+  margin-bottom: 20px;
 }
 
 .App {
