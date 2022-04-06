@@ -1,7 +1,7 @@
 const { MOVIE_LOADING_TYPE, GET_MOVIES } = require('../types')
 
 const iState = {
-  movies: [],
+  movies: {results: []},
   moviesLoading: '' 
 }
 
@@ -12,7 +12,7 @@ const MovieReducer = (state = iState, action) => {
     case GET_MOVIES:
       return { ...state, movies: action.payload }
     default:
-      return { ...state }
+      return state 
   }
 }
 

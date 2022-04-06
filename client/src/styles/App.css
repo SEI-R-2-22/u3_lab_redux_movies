@@ -4,7 +4,12 @@
 }
 
 body {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
   background-color: black;
+  color: white;
 }
 
 
@@ -27,4 +32,15 @@ img {
   width: 500px;
 }
 
+.grid {
+  margin: 25px;
+  color: white;
+}
+
+.movie-data {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
 
