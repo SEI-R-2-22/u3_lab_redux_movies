@@ -19,6 +19,7 @@ const MovieDetails = (props) => {
     useEffect(() => {
         props.fetchMovieDetails(id)
     }, [id])
+    
     return (
         <div></div>
     )
