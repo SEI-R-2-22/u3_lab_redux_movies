@@ -8,3 +8,14 @@ export const GetMovies = async () => {
       throw error
     }
   }
+
+  export const GetMovieDetails = async (id) => {
+    try {
+      const res = await Client.get(`/movie/${id}?api_key=${API_KEY}&language=en-US`)
+      //console.log(res)
+      return res.data.overview
+    } catch (error) {
+      throw error
+    }
+  }
+  

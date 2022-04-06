@@ -1,8 +1,9 @@
 import './styles/App.css'
 import {Routes,Route} from 'react-router-dom'
 import Movies from './components/Movies'
+import Details from './components/Details'
 
-const App = (props) => {
+const App = () => {
   
   return (
     <div>
@@ -12,8 +13,7 @@ const App = (props) => {
     </div>
     <div>
       <Routes>
-            <Route path='/' element={<Movies/>}/>
-            <Route path="/movies/:id"id={props.id} component={<Movies/>} />
+            <Route path="/movie/:id" element={<Details/>} />
       </Routes>
     </div>
     </div>
