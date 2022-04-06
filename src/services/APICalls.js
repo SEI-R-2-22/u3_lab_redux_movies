@@ -1,6 +1,5 @@
 import BASE_URL from './index'
 const API_KEY = process.env.REACT_APP_TMDB_KEY
-// const API_KEY = 'a8e5d4bfc2cdd4d86c90bbb583e63c3f'
 
 export const GetMovies = async () => {
   try {
