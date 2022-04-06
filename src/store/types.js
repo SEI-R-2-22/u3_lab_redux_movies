@@ -1,0 +1,2 @@
+export const GET_POP_MOVIES = 'GET_POP_MOVIES'
+export const GET_MOVIE_DETAILS = 'GET_MOVIE_DETAILS'
