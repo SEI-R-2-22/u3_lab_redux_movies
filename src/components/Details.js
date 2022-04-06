@@ -3,6 +3,7 @@ import { useParams } from 'react-router-dom'
 import { connect } from 'react-redux'
 import { LoadMovieDetails } from '../store/actions/MovieActions'
 
+
 const mapStateToProps = ({ detailState }) => {
   return { detailState }
 }
@@ -19,17 +20,22 @@ const Details = (props) => {
   useEffect(() => {
     props.fetchDetails(id)
   },[id])
-  console.log(props.detailState)
+  console.log(props.detailState.details)
   return (
+
     <div className='det'>
     <ul>
       {props.detailState.details.value ? (
         props.detailState.details.map((mov) => (
-          <li key={mov.id}>{mov.details}</li>
+          <li>
+            <h3 key={mov.id}>
+             {mov.details.value}
+             </h3>
+          </li>
         ))
         ) : (
          <h3>No Movie Details</h3>
-       )} 
+       ) } 
     </ul>
     </div>
   )
