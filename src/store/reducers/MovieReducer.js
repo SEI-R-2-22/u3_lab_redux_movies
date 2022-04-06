@@ -1,4 +1,4 @@
-const { GET_MOVIES } = require('..types')
+const { GET_MOVIES } = require('../types')
 
 const initialState = {
     movies: []
