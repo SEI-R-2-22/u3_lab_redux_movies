@@ -1,4 +1,7 @@
 import './styles/App.css'
+import axios from 'axios'
+import { BASE_URL } from './globals'
+
 
 const App = () => {
   
