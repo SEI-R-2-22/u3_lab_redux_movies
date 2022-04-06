@@ -7,8 +7,6 @@ import store from './store'
 
 const App = () => {
  
-
-
   return (
     <div className="App">
       <h3>Redux Thunk Practice</h3>

@@ -18,12 +18,13 @@ const mapDispatchToProps = (dispatch) => {
 }
 
 const MovieList = (props) => {
-
+    const {fetchMovies} = props
+    
     const navigate = useNavigate()
 
     useEffect(() => {
-        props.fetchMovies()
-    }, [])
+        fetchMovies()
+    }, [fetchMovies])
 
     return (
         <div className="movie-data">
