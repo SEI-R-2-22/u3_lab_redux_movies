@@ -18,7 +18,7 @@ const MovieDetails = (props) => {
   useEffect(() => {
     props.fetchMovieDetails(id)
     console.log(props)
-  }, [id])
+  }, [])
 
   return <div>{props.movieDetailsState.details.overview}</div>
 }
