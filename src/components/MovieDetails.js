@@ -21,7 +21,10 @@ const MovieDetails = (props) => {
   },[id])
 
   return (
-    <div>{props.movieDetailState.movieDetails.overview}</div>
+      <div>
+         <h1>MOVIE OVERVIEW</h1>
+    <div className="overview">{props.movieDetailState.movieDetails.overview}</div>
+    </div>
   )
 }
 
