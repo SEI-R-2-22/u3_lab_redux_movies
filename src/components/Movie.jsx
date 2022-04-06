@@ -10,7 +10,7 @@ const Movie = (props) => {
     }, [])
 
     return (
-        <div className='movie-container'>
+        <div className='movies-container'>
             {
                 props.movieState.movies.map((movie) => (
                     <div key={movie.id} className='movie-card'>
