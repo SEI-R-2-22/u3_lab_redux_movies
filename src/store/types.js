@@ -1,0 +1,3 @@
+export const GET_MOVIES = 'GET_MOVIES'
+export const MOVIE_LOADING_TYPE = 'MOVIE_LOADING_TYPE'
+export const GET_MOVIE_DETAIL = 'GET_MOVIE_DETAIL'

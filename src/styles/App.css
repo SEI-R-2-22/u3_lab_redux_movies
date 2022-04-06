@@ -2,6 +2,10 @@
   text-align: center;
 }
 
+#app-title {
+  color: white;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -35,4 +39,34 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+h3 {
+  text-align: 'center';
+}
+
+.flex-row {
+  display: flex;
+}
+
+.left {
+  flex: 1;
+}
+
+.right {
+  flex: 2;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:visited {
+  color: white;
+}
+
+a:hover {
+  background-color: orange;
+  color: blue;
 }
