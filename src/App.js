@@ -2,6 +2,8 @@ import './styles/App.css'
 import { Route, Routes, BrowserRouter } from 'react-router-dom'
 import MovieList from './components/MovieList'
 import Movie from './components/Movie'
+import { Provider } from 'react-redux'
+import store from './store'
 
 const App = () => {
  
@@ -10,12 +12,14 @@ const App = () => {
   return (
     <div className="App">
       <h3>Redux Thunk Practice</h3>
-      <BrowserRouter>
-        <Routes>
-          <Route path='/' element={<MovieList/>} />
-          <Route path='/:movie' element={<Movie/>} />
-        </Routes>
-      </BrowserRouter>
+      <Provider store={store}>
+        <BrowserRouter>
+          <Routes>
+            <Route path='/' element={<MovieList/>} />
+            <Route path='/:movie' element={<Movie/>} />
+          </Routes>
+        </BrowserRouter>
+      </Provider>
     </div>
   )
 }

@@ -7,9 +7,10 @@ export const LoadMovies = () => {
   return async (dispatch) => {
     try{
       const movies = await GetMovies()
+      console.log(movies)
       dispatch({
         type: GET_MOVIES,
-        payload: movies
+        payload: movies.results
       })
       console.log(movies)
     } catch (error) {

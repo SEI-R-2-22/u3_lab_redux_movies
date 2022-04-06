@@ -1,3 +1,11 @@
+img {
+  width: 500px;
+}
+
+.movie-data {
+  color: white;
+}
+
 .App {
   text-align: center;
 }
