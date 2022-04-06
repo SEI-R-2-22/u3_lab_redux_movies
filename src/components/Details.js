@@ -1,4 +1,3 @@
-import { Axios } from 'axios'
 import { useEffect } from 'react'
 import { useParams } from 'react-router-dom'
 import { connect } from 'react-redux'
