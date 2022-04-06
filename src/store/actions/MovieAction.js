@@ -5,7 +5,7 @@ export const LoadMoviesData = () => {
   return async (dispatch) => {
     try {
       const movies = await GetMoviesList()
-      //console.log()
+
       dispatch({
         type: GET_MOVIES_LIST,
         payload: movies
