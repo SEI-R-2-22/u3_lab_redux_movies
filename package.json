@@ -3,12 +3,20 @@
   "version": "2.0.0",
   "private": true,
   "dependencies": {
+    "axios": "^0.26.1",
+    "cors": "^2.8.5",
+    "express": "^4.17.3",
+    "mongoose": "^6.2.10",
+    "morgan": "^1.10.0",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
-    "react-scripts": "5.0.0"
+    "react-redux": "^7.2.8",
+    "react-scripts": "^5.0.0",
+    "redux": "^4.1.2",
+    "redux-thunk": "^2.4.1"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "ENV=production react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -30,5 +38,18 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "description": "![Walt](https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmedia.giphy.com%2Fmedia%2FR3S6MfUoKvBVS%2Fgiphy.gif&f=1&nofb=1)",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sdelitta/u3_lab_redux_movies.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sdelitta/u3_lab_redux_movies/issues"
+  },
+  "homepage": "https://github.com/sdelitta/u3_lab_redux_movies#readme"
 }
