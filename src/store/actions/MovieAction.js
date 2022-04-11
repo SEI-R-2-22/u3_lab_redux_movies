@@ -1,32 +1,31 @@
-import { GET_MOVIES_LIST, GET_MOVIE_DETAIL } from '../types'
-import { GetMoviesList, GetMovieDetail } from '../../services/MovieService'
+import { SHOW_LIST, SHOW_DETAILS } from "../types.js";
+import { GetMoviesList, GetMovieDetails } from "../../services/MovieService";
 
-export const LoadMoviesData = () => {
+export const LoadMovieList = () => {
   return async (dispatch) => {
     try {
-      const movies = await GetMoviesList()
-      //console.log()
+      const list = await GetMoviesList();
       dispatch({
-        type: GET_MOVIES_LIST,
-        payload: movies
-      })
+        type: SHOW_LIST,
+        payload: list,
+      });
     } catch (error) {
-      throw error
+      throw error;
     }
-  }
-}
-
-export const LoadMovieDetail = (id) => {
+  };
+};
+export const LoadMovieDetails = (id) => {
   return async (dispatch) => {
     try {
-      const details = await GetMovieDetail(id)
-
+      const getmovieDetails = await GetMovieDetails(id);
+      console.log(getmovieDetails);
       dispatch({
-        type: GET_MOVIE_DETAIL,
-        payload: details
-      })
+        type: SHOW_DETAILS,
+        payload: getmovieDetails,
+      });
     } catch (error) {
-      throw error
+      throw error;
     }
-  }
-}
+  };
+};
+// https://api.themoviedb.org/3/movie/550?api_key=a1a2a9631f04a7ac4fa07dedda3a5024
