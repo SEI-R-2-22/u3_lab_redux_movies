@@ -1,8 +1,7 @@
 import React from "react";
 import { useEffect } from "react";
 import { connect } from "react-redux";
-import { useParams } from "react-router-dom";
-import { LoadMovie } from '..store/actions/MovieActions'
+import { LoadMovie } from '..src/store/actions/MovieActions'
 import { Link } from "react-router-dom";
 
 const mapStateToProps = ({ movieState }) => {
@@ -37,4 +36,4 @@ const Movie = (props) => {
     )
 }
 
-export default Movie;
+export default connect(mapStateToProps, mapDispatchToProps) (Movie);
