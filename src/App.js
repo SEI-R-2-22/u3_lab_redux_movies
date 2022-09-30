@@ -8,7 +8,7 @@ import MovieDetails from "./components/ShowMovieDetails";
 const App = () => {
   return (
     <div className="App">
-      <h3>Redux Thunk Practice</h3>
+      <h1 className="siteName">Trending Movies</h1>
       <Routes>
         <Route path="/" element={<Movies />} />
         <Route path="/movies/:id" element={<MovieDetails />} />

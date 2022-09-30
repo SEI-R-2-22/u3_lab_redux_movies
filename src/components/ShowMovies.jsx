@@ -22,6 +22,7 @@ const Movies = (props) => {
     <div className="list-container">
       {props.movieState.movieList.map((movie) => (
         <div key={movie.id} className="movie-items">
+          <h3 className="title">{movie.title}</h3>
           <Link to={`/movies/${movie.id}`}>
             <img
               className="movie-poster"
